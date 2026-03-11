@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.github.growth-platform</groupId>
+    <artifactId>growth-platform-bom</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>GrowthPlatform BOM</name>
+    <description>Bill of Materials for GrowthPlatform - unified dependency version management</description>
+    <url>https://github.com/yuhang94/growth-platform-bom</url>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+
+    <properties>
+        <!-- Java -->
+        <java.version>21</java.version>
+
+        <!-- Spring -->
+        <spring-boot.version>3.4.3</spring-boot.version>
+        <spring-cloud.version>2024.0.1</spring-cloud.version>
+        <spring-cloud-alibaba.version>2023.0.3.2</spring-cloud-alibaba.version>
+
+        <!-- Database -->
+        <mybatis-plus.version>3.5.9</mybatis-plus.version>
+        <mysql-connector.version>8.0.33</mysql-connector.version>
+        <druid.version>1.2.24</druid.version>
+
+        <!-- Redis -->
+        <redisson.version>3.40.2</redisson.version>
+
+        <!-- MQ -->
+        <rocketmq-spring.version>2.3.1</rocketmq-spring.version>
+
+        <!-- Tools -->
+        <mapstruct.version>1.6.3</mapstruct.version>
+        <lombok.version>1.18.36</lombok.version>
+        <guava.version>33.4.0-jre</guava.version>
+        <hutool.version>5.8.34</hutool.version>
+        <commons-lang3.version>3.17.0</commons-lang3.version>
+
+        <!-- API Doc -->
+        <springdoc.version>2.7.0</springdoc.version>
+
+        <!-- Scheduling -->
+        <xxl-job.version>2.4.2</xxl-job.version>
+
+        <!-- Testing -->
+        <testcontainers.version>1.20.4</testcontainers.version>
+
+        <!-- GrowthPlatform modules -->
+        <growth-platform.version>0.1.0-SNAPSHOT</growth-platform.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- ==================== Spring BOMs ==================== -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- ==================== Database ==================== -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.mysql</groupId>
+                <artifactId>mysql-connector-j</artifactId>
+                <version>${mysql-connector.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-3-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+
+            <!-- ==================== Redis ==================== -->
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson-spring-boot-starter</artifactId>
+                <version>${redisson.version}</version>
+            </dependency>
+
+            <!-- ==================== MQ ==================== -->
+            <dependency>
+                <groupId>org.apache.rocketmq</groupId>
+                <artifactId>rocketmq-spring-boot-starter</artifactId>
+                <version>${rocketmq-spring.version}</version>
+            </dependency>
+
+            <!-- ==================== Tools ==================== -->
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>${mapstruct.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-processor</artifactId>
+                <version>${mapstruct.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3.version}</version>
+            </dependency>
+
+            <!-- ==================== API Doc ==================== -->
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+                <version>${springdoc.version}</version>
+            </dependency>
+
+            <!-- ==================== Scheduling ==================== -->
+            <dependency>
+                <groupId>com.xuxueli</groupId>
+                <artifactId>xxl-job-core</artifactId>
+                <version>${xxl-job.version}</version>
+            </dependency>
+
+            <!-- ==================== GrowthPlatform Modules ==================== -->
+            <!-- common -->
+            <dependency>
+                <groupId>io.github.growth-platform</groupId>
+                <artifactId>growth-common-core</artifactId>
+                <version>${growth-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.growth-platform</groupId>
+                <artifactId>growth-common-mq</artifactId>
+                <version>${growth-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.growth-platform</groupId>
+                <artifactId>growth-common-cache</artifactId>
+                <version>${growth-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.growth-platform</groupId>
+                <artifactId>growth-common-scheduler</artifactId>
+                <version>${growth-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.growth-platform</groupId>
+                <artifactId>growth-common-auth</artifactId>
+                <version>${growth-platform.version}</version>
+            </dependency>
+
+            <!-- service APIs -->
+            <dependency>
+                <groupId>io.github.growth-platform</groupId>
+                <artifactId>growth-event-api</artifactId>
+                <version>${growth-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.growth-platform</groupId>
+                <artifactId>growth-profile-api</artifactId>
+                <version>${growth-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.growth-platform</groupId>
+                <artifactId>growth-frequency-api</artifactId>
+                <version>${growth-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.growth-platform</groupId>
+                <artifactId>growth-asset-api</artifactId>
+                <version>${growth-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.growth-platform</groupId>
+                <artifactId>growth-coupon-api</artifactId>
+                <version>${growth-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.growth-platform</groupId>
+                <artifactId>growth-incentive-api</artifactId>
+                <version>${growth-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.growth-platform</groupId>
+                <artifactId>growth-message-api</artifactId>
+                <version>${growth-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.growth-platform</groupId>
+                <artifactId>growth-creative-api</artifactId>
+                <version>${growth-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.growth-platform</groupId>
+                <artifactId>growth-campaign-api</artifactId>
+                <version>${growth-platform.version}</version>
+            </dependency>
+
+            <!-- ==================== Testing ==================== -->
+            <dependency>
+                <groupId>org.testcontainers</groupId>
+                <artifactId>testcontainers-bom</artifactId>
+                <version>${testcontainers.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
