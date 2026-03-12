@@ -34,6 +34,9 @@
         <mysql-connector.version>8.0.33</mysql-connector.version>
         <druid.version>1.2.24</druid.version>
 
+        <!-- HBase -->
+        <hbase-client.version>2.6.1</hbase-client.version>
+
         <!-- Redis -->
         <redisson.version>3.40.2</redisson.version>
 
@@ -42,7 +45,7 @@
 
         <!-- Tools -->
         <mapstruct.version>1.6.3</mapstruct.version>
-        <lombok.version>1.18.36</lombok.version>
+        <lombok.version>1.18.40</lombok.version>
         <guava.version>33.4.0-jre</guava.version>
         <hutool.version>5.8.34</hutool.version>
         <commons-lang3.version>3.17.0</commons-lang3.version>
@@ -100,6 +103,23 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid-spring-boot-3-starter</artifactId>
                 <version>${druid.version}</version>
+            </dependency>
+
+            <!-- ==================== HBase ==================== -->
+            <dependency>
+                <groupId>org.apache.hbase</groupId>
+                <artifactId>hbase-client</artifactId>
+                <version>${hbase-client.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-log4j12</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>log4j</groupId>
+                        <artifactId>log4j</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
             <!-- ==================== Redis ==================== -->
