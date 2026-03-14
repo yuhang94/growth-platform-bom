@@ -60,7 +60,7 @@
         <testcontainers.version>1.20.4</testcontainers.version>
 
         <!-- GrowthPlatform modules -->
-        <growth-platform.version>0.1.0-SNAPSHOT</growth-platform.version>
+        <growth-platform.version>main-SNAPSHOT</growth-platform.version>
     </properties>
 
     <dependencyManagement>
