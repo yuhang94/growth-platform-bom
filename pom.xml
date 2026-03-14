@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.growth-platform</groupId>
+    <groupId>io.github.yuhang94</groupId>
     <artifactId>growth-platform-bom</artifactId>
     <version>0.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -180,74 +180,74 @@
             <!-- ==================== GrowthPlatform Modules ==================== -->
             <!-- common -->
             <dependency>
-                <groupId>io.github.growth-platform</groupId>
+                <groupId>io.github.yuhang94</groupId>
                 <artifactId>growth-common-core</artifactId>
                 <version>${growth-platform.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.github.growth-platform</groupId>
+                <groupId>io.github.yuhang94</groupId>
                 <artifactId>growth-common-mq</artifactId>
                 <version>${growth-platform.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.github.growth-platform</groupId>
+                <groupId>io.github.yuhang94</groupId>
                 <artifactId>growth-common-cache</artifactId>
                 <version>${growth-platform.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.github.growth-platform</groupId>
+                <groupId>io.github.yuhang94</groupId>
                 <artifactId>growth-common-scheduler</artifactId>
                 <version>${growth-platform.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.github.growth-platform</groupId>
+                <groupId>io.github.yuhang94</groupId>
                 <artifactId>growth-common-auth</artifactId>
                 <version>${growth-platform.version}</version>
             </dependency>
 
             <!-- service APIs -->
             <dependency>
-                <groupId>io.github.growth-platform</groupId>
+                <groupId>io.github.yuhang94</groupId>
                 <artifactId>growth-event-api</artifactId>
                 <version>${growth-platform.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.github.growth-platform</groupId>
+                <groupId>io.github.yuhang94</groupId>
                 <artifactId>growth-profile-api</artifactId>
                 <version>${growth-platform.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.github.growth-platform</groupId>
+                <groupId>io.github.yuhang94</groupId>
                 <artifactId>growth-frequency-api</artifactId>
                 <version>${growth-platform.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.github.growth-platform</groupId>
+                <groupId>io.github.yuhang94</groupId>
                 <artifactId>growth-asset-api</artifactId>
                 <version>${growth-platform.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.github.growth-platform</groupId>
+                <groupId>io.github.yuhang94</groupId>
                 <artifactId>growth-coupon-api</artifactId>
                 <version>${growth-platform.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.github.growth-platform</groupId>
+                <groupId>io.github.yuhang94</groupId>
                 <artifactId>growth-incentive-api</artifactId>
                 <version>${growth-platform.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.github.growth-platform</groupId>
+                <groupId>io.github.yuhang94</groupId>
                 <artifactId>growth-message-api</artifactId>
                 <version>${growth-platform.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.github.growth-platform</groupId>
+                <groupId>io.github.yuhang94</groupId>
                 <artifactId>growth-creative-api</artifactId>
                 <version>${growth-platform.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.github.growth-platform</groupId>
+                <groupId>io.github.yuhang94</groupId>
                 <artifactId>growth-campaign-api</artifactId>
                 <version>${growth-platform.version}</version>
             </dependency>
