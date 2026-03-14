@@ -178,29 +178,29 @@
             </dependency>
 
             <!-- ==================== GrowthPlatform Modules ==================== -->
-            <!-- common -->
+            <!-- common (JitPack appends repo name to groupId for multi-module projects) -->
             <dependency>
-                <groupId>io.github.yuhang94</groupId>
+                <groupId>io.github.yuhang94.growth-common</groupId>
                 <artifactId>growth-common-core</artifactId>
                 <version>${growth-platform.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.github.yuhang94</groupId>
+                <groupId>io.github.yuhang94.growth-common</groupId>
                 <artifactId>growth-common-mq</artifactId>
                 <version>${growth-platform.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.github.yuhang94</groupId>
+                <groupId>io.github.yuhang94.growth-common</groupId>
                 <artifactId>growth-common-cache</artifactId>
                 <version>${growth-platform.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.github.yuhang94</groupId>
+                <groupId>io.github.yuhang94.growth-common</groupId>
                 <artifactId>growth-common-scheduler</artifactId>
                 <version>${growth-platform.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.github.yuhang94</groupId>
+                <groupId>io.github.yuhang94.growth-common</groupId>
                 <artifactId>growth-common-auth</artifactId>
                 <version>${growth-platform.version}</version>
             </dependency>
